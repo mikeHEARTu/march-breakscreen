@@ -21,7 +21,7 @@ body
 .videoBG
 {
 	background: black;
-	background:url(img/anthony-delanoix-15928.jpg);
+	background-image:url(../img/anthony-delanoix-15928.jpg);
 	background-size: cover;
 	background-position: center center;
 	position: absolute;
@@ -38,6 +38,7 @@ body
 	border-left: 30px solid rgb(100, 65, 164);
 	width: 580px;
 	height: 1080px;
+	margin-right:-100px;
 	left: 0;
 	top: 0;
 	animation-name:borderFill;
