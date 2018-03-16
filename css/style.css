@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body
+{
+	color:white;
+	background: black;
+	text-transform: uppercase;
+}
+.mySlides 
+{
+	overflow: hidden;
+	font-family: Lato, Helvetica, Calibri, sans-serif;
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left:0;
+	top:0;
+	/*animation-name:slideIn;
+    animation-duration:1s;*/
+}
+.videoBG
+{
+	background: black;
+	background:url(img/anthony-delanoix-15928.jpg);
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	box-shadow: 0 0 0 540px rgba(0,0,0,0.5) inset; 
+	width: 1920px;
+	height: 1080px;
+	left: 0;
+	top: 0;
+}
+.textBG
+{
+	position: absolute;
+	background: rgba(100, 65, 164, 0.5);
+	border-left: 30px solid rgb(100, 65, 164);
+	width: 580px;
+	height: 1080px;
+	left: 0;
+	top: 0;
+	animation-name:borderFill;
+	animation-duration:1s;
+	transition-timing-function: ease-out;
+}
+.textContainer
+{
+	position: absolute;
+	width: 1860px;
+	height: 1080px;
+	left: 0;
+	top: 0;
+	margin-left: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.textLayer
+{
+	font-size: 176px;
+	font-weight: bolder;
+	line-height: 80%;
+	animation-name:textFill;
+	animation-delay: 0.7s;
+	animation-duration:0.5s;
+	transition-timing-function: ease-out;
+	animation-fill-mode: backwards;
+}
+
+@keyframes slideIn
+{
+    from
+	{
+		filter:opacity(0);
+	}
+	to
+	{
+		filter:opacity(1);
+	}
+}
+
+@keyframes borderFill
+{
+	from
+	{
+		border-left: 1920px solid rgb(100, 65, 164);
+		width: 1890px;
+	}
+	to
+	{
+		border-left: 30px solid rgb(100, 65, 164);
+		width: 580px;
+	}
+}
+
+@keyframes textFill
+{
+	from
+	{
+		transform: translateX(200px);
+		opacity: 0;
+	}
+	to
+	{
+		opacity: 1;
+	}
+}

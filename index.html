@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Live breakscreen for Twitch.tv/aznmike123">
+	<meta name="keywords" content="twitch, overlay">
+	<meta name="author" content="Michael Macasiano">
+	<title>Video games are awful</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="streamCanvas">
+		<div class="mySlides">
+			<div class="videoBG" style="background-image:url(img/anthony-delanoix-15928.jpg)">
+				
+			</div>
+
+			<div class="textBG">
+				
+			</div>
+
+			<div class="textContainer">
+				<div class="textLayer">
+						Michael Chan
+						<br>
+						Going Live soon!
+				</div>
+			</div>
+		</div>
+
+		<div class="mySlides">
+				<div class="videoBG">
+					<iframe width="1920" height="1080" src="https://www.youtube.com/embed/fg9esFPhbaI?rel=0&amp;controls=0&amp;showinfo=0&amp;start=4200&amp;autoplay=1&amp;mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+	
+				<div class="textBG">
+					
+				</div>
+	
+				<div class="textContainer">
+					<div class="textLayer">
+							Now playing
+							<br>
+							Train sim world
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+	<script>
+		var slideIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > x.length) { slideIndex = 1 }
+			x[slideIndex - 1].style.display = "block";
+			setTimeout(carousel, 5000); // Change image every 5 seconds
+		}
+	</script>
+</body>
+
+</html>
