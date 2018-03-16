@@ -15,8 +15,8 @@ body
 	height: 1080px;
 	left:0;
 	top:0;
-	/*animation-name:slideIn;
-    animation-duration:1s;*/
+	animation-name:slideIn;
+    animation-duration:1s;
 }
 .videoBG
 {
@@ -84,12 +84,12 @@ body
 {
 	from
 	{
-		border-left: 1920px solid rgb(100, 65, 164);
+		background: rgba(100, 65, 164, 1);
 		width: 1890px;
 	}
 	to
 	{
-		border-left: 30px solid rgb(100, 65, 164);
+		background: rgba(100, 65, 164, 0.5);
 		width: 580px;
 	}
 }
