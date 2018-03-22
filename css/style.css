@@ -6,6 +6,26 @@ body
 	background: black;
 	text-transform: uppercase;
 }
+.textOverlay
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	height: 1080px;
+	width: 1920px;
+	font-family: Lato, Helvetica, Calibri, sans-serif;
+	font-size: 24px;
+	z-index: 100;
+}
+.topBar
+{
+	position: inline-block;
+	text-align: right;
+	padding: 0 50px;
+	height: 80px;
+	line-height: 80px;
+	background: purple;
+}
 .mySlides 
 {
 	overflow: hidden;
@@ -31,43 +51,7 @@ body
 	left: 0;
 	top: 0;
 }
-.textBG
-{
-	position: absolute;
-	background: rgba(100, 65, 164, 0.5);
-	border-left: 30px solid rgb(100, 65, 164);
-	width: 580px;
-	height: 1080px;
-	margin-right:-100px;
-	left: 0;
-	top: 0;
-	animation-name:borderFill;
-	animation-duration:1s;
-	transition-timing-function: ease-out;
-}
-.textContainer
-{
-	position: absolute;
-	width: 1860px;
-	height: 1080px;
-	left: 0;
-	top: 0;
-	margin-left: 60px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
-.textLayer
-{
-	font-size: 176px;
-	font-weight: bolder;
-	line-height: 80%;
-	animation-name:textFill;
-	animation-delay: 0.7s;
-	animation-duration:0.5s;
-	transition-timing-function: ease-out;
-	animation-fill-mode: backwards;
-}
+
 
 @keyframes slideIn
 {
@@ -78,32 +62,5 @@ body
 	to
 	{
 		filter:opacity(1);
-	}
-}
-
-@keyframes borderFill
-{
-	from
-	{
-		background: rgba(100, 65, 164, 1);
-		width: 1890px;
-	}
-	to
-	{
-		background: rgba(100, 65, 164, 0.5);
-		width: 580px;
-	}
-}
-
-@keyframes textFill
-{
-	from
-	{
-		transform: translateX(200px);
-		opacity: 0;
-	}
-	to
-	{
-		opacity: 1;
 	}
 }
